@@ -24,6 +24,11 @@ set(CMAKE_FIND_PACKAGE_TARGETS_GLOBAL TRUE)
 include(buildspec)
 include(cpackconfig)
 
+set(RESOURCE_OUTPUT_DIR "${OBS_EXECUTABLE_DESTINATION}")
+file(MAKE_DIRECTORY ${RESOURCE_OUTPUT_DIR})
+configure_file(${CMAKE_CURRENT_SOURCE_DIR}/.deps/obs-deps-2023-06-22-x64/bin/ffmpeg.exe ${RESOURCE_OUTPUT_DIR}/../../rundir/Release/bin/64bit/ffmpeg.exe COPYONLY)
+# need ffmpeg.exe
+
 if(CMAKE_SIZEOF_VOID_P EQUAL 8)
   execute_process(
     COMMAND
