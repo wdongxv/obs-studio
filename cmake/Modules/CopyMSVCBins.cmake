@@ -23,6 +23,7 @@ file(
   GLOB
   FFMPEG_BIN_FILES
   "${FFMPEG_avcodec_INCLUDE_DIR}/../bin/avcodec-*.dll"
+  "${FFMPEG_avcodec_INCLUDE_DIR}/../bin/ffmpeg.exe"
   "${FFMPEG_avcodec_INCLUDE_DIR}/../bin${_bin_suffix}/avcodec-*.dll"
   "${FFMPEG_avcodec_INCLUDE_DIR}/bin${_bin_suffix}/avcodec-*.dll"
   "${FFMPEG_avformat_INCLUDE_DIR}/../bin/avformat-*.dll"
